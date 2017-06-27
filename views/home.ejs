@@ -1,17 +1,53 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
     <head>
-        <title>
-            My First Server
-        </title>
+        <title>GitHub Accessor Thing</title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+        
+          <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://use.fontawesome.com/af0156444d.js"></script>
+        
     </head>
+    
     <body>
-        <h1>Gift Giver App</h1>
-        <img src="<%= user.avatar_url %>" />
-        <p>Enter your friends here separated by a comma:</p>
-        <form action="/" method="post">
-            <textarea name="friends"></textarea>
-            <button type="submit">Submit</button>
-        </form>
+        <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo center">Logo</a>
+              <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+              </ul>
+            </div>
+        </nav>
+        
+        <div class="container center-align">
+            <h1><i class="fa fa-github"></i> GitHub</h1>
+            <form action="/login" method="post">
+                
+                 <div class="row">
+                    <div class="input-field col s6 push-s3">
+                        <input id="username" type="text" class="validate" name="username">
+                        <label for="username">Username</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 push-s3">
+                        <input id="pwd" type="password" class="validate" name="password">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                
+                <!--<p>Username: <input type="text" name="username" /></p>-->
+                <!--<p>Password: <input type="password" name="password" /></p>-->
+                <button type="submit"><a class="waves-effect waves-light btn-large">Log In</a></button>
+            </form>
+             <div class="row">
+        </div>
     </body>
+    
 </html>
