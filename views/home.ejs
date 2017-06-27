@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My First Server
+        </title>
+    </head>
+    <body>
+        <h1>Gift Giver App</h1>
+        <img src="<%= user.avatar_url %>" />
+        <p>Enter your friends here separated by a comma:</p>
+        <form action="/" method="post">
+            <textarea name="friends"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

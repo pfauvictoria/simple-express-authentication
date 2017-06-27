@@ -1,0 +1,7 @@
+<%= JSON.stringify(groups, undefined, 2) %>
+
+<% groups.forEach(function(group) { %>
+
+    <h3><%= group[0] %> is paired with <%= group[1] %></h3>
+
+<% }) %>
